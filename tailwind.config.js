@@ -2,6 +2,9 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx,html}"],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         tosca: "#20ad96",
@@ -9,7 +12,10 @@ export default {
         purple: "#333461",
       },
       fontFamily: {
-        sans: ["Poppins", "sans-serif"],
+        sans: ["Kumbh Sans", "sans"],
+      },
+      backgroundImage: {
+        "hero-home": "url('/pexels-andrea-piacquadio-3978564 1.png')",
       },
     },
   },
