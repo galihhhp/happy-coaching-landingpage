@@ -2,6 +2,7 @@ import "./index.css";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
+import AboutUs from "routes/AboutUs";
 import Guide from "routes/Guide";
 import Home from "routes/Home";
 import React from "react";
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/free-guide",
     element: <Guide />,
+  },
+  {
+    path: "/about-us",
+    element: <AboutUs />,
   },
 ]);
 

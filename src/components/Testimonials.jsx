@@ -1,4 +1,4 @@
-const { default: Star } = require("./Star");
+import Star from "./Star";
 
 const Testimonials = () => {
   const testimonials = [1, 2, 3];
