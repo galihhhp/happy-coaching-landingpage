@@ -1,5 +1,6 @@
 import Hero from "components/Hero";
 import Layout from "components/Layout";
+import Testimonials from "components/Testimonials";
 // import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -18,8 +19,6 @@ const Home = () => {
       title: "Group Coaching Sessions",
     },
   ];
-
-  const testimonials = [1, 2, 3];
 
   return (
     <Layout>
@@ -66,42 +65,7 @@ const Home = () => {
           })}
         </div>
       </div>
-      <div className="min-h-screen lg:h-screen bg-light-yellow py-10 px-4 lg:p-0">
-        <div className="container flex flex-col justify-center gap-10 h-full">
-          <h1 className="text-purple lg:w-[700px] font-bold text-[32px] md:text-[44px] lg:text-[56px] md:leading-[52px]">
-            Hear out what my clients say about me
-          </h1>
-          <div className="flex flex-col md:flex-row gap-4">
-            {testimonials.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className="flex flex-col gap-4 w-full p-8 rounded-lg hover:shadow-md bg-white">
-                  <p className="text-[12px] md:text-[16px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minus ipsa dolore suscipit fugiat error, reiciendis
-                    voluptatibus fugit provident ipsam libero.
-                  </p>
-                  <h1 className="font-bold text-purple">Jane</h1>
-                  <img src="/avatar-circle.png" alt="" className="w-10" />
-                  <div className="flex gap-2">
-                    {[1, 2, 3, 4, 5].map((item, index) => {
-                      return (
-                        <img
-                          key={index}
-                          src="/star.svg"
-                          alt=""
-                          className="w-5 inline-block"
-                        />
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
+      <Testimonials />
       <div className="container min-h-screen md:h-screen py-8 lg:py-20 flex flex-col justify-center items-center gap-4 md:gap-20 px-4 md:px-0">
         <h1 className="text-purple text-center lg:w-[700px] font-bold text-[32px] md:text-[44px] md:leading-[52px]">
           Stay Motivated, read the weekly blog articles.

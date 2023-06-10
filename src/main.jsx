@@ -2,6 +2,7 @@ import "./index.css";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
+import Guide from "routes/Guide";
 import Home from "routes/Home";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -10,14 +11,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    // loader: rootLoader,
-    // children: [
-    //   {
-    //     path: "team",
-    //     element: <Team />,
-    //     loader: teamLoader,
-    //   },
-    // ],
+  },
+  {
+    path: "/free-guide",
+    element: <Guide />,
   },
 ]);
 
