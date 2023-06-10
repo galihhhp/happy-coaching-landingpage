@@ -3,8 +3,10 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import AboutUs from "routes/AboutUs";
+import ExtraSales from "routes/ExtraSales";
 import Guide from "routes/Guide";
 import Home from "routes/Home";
+import NotFound from "routes/NotFound";
 import React from "react";
 import ReactDOM from "react-dom/client";
 
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
   {
     path: "/about-us",
     element: <AboutUs />,
+  },
+  {
+    path: "/extra-salespage",
+    element: <ExtraSales />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 

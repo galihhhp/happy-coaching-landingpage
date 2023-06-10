@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
         </div>
       )}
 
-      <div className="min-h-screen">
+      <div className="min-h-screen text-purple">
         <nav className="bg-white h-20 sticky top-0 z-40 flex justify-center px-4 md:px-0">
           <div className="container flex justify-between items-center">
             <div className="flex gap-2 w-56 items-center">
