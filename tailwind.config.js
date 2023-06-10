@@ -16,6 +16,7 @@ export default {
       },
       backgroundImage: {
         "hero-home": "url('/pexels-andrea-piacquadio-3978564 1.png')",
+        transform: "url('/transform.png')",
       },
     },
   },
