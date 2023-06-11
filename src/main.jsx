@@ -9,6 +9,7 @@ import Home from "routes/Home";
 import NotFound from "routes/NotFound";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Service from "routes/Service";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/extra-salespage",
     element: <ExtraSales />,
+  },
+  {
+    path: "/services",
+    element: <Service />,
   },
   {
     path: "*",
